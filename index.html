@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX module</title>
+   <style>
+    .square{
+        position: relative;
+        width: 100px; 
+        height: 100px;
+        background-color: red;
+        padding: 10px 10px 10px 10px;
+        border: 2px dotted rgb(17, 216, 30);
+        left: 200px;
+    }
+    p{
+        margin: 0px;
+        border: 1px solid yellow;
+    }
+    .carrom-board{
+        /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 400px;
+        height: 400px;
+        background-color: antiquewhite;
+        padding: 10px;
+
+
+        >.upper{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        >.lower{
+            display: flex;
+            justify-content: space-between;
+
+        }
+    }
+    .pockets{
+        /* position: absolute; */
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: black;
+    }
+.point-table{
+    position:fixed;
+    width: 180px;
+    height: 80px;
+    background-color: black;
+    top: 50px;
+    right: 10px;
+    
+    
+    
+}
+
+
+    
+   </style>
+</head>
+<body>
+    <div class="carrom-board">
+        <div class="upper">
+         <div class="pockets" ></div>
+        <div class="pockets" ></div>
+        </div>
+        <div class="lower">
+        <div class="pockets" ></div>
+        <div class="pockets" ></div>
+        </div>
+  
+    </div>
+
+
+
+
+
+    <!-- <div class="carrom-board ">
+        <div class="pockets" style="top: 10px; left: 10px;"></div>
+        <div class="pockets" style="top: 10px; right: 10px;"></div>
+        <div class="pockets" style="bottom: 10px; left: 10px;"></div>
+        <div class="pockets" style="bottom: 10px; right: 10px;"></div>
+  </div> -->
+
+  <!-- <div class="point-table">
+    <p style="color: white;">POINT TABLE</p>
+  </div> -->
+
+
+   <!-- <div class="square" style="margin-bottom: 10px;">
+        <p>BOX 1</p>
+    </div>
+    <div class="square">
+        <p>BOX 2</p> -->
+
+      
+</body>
+</html>
